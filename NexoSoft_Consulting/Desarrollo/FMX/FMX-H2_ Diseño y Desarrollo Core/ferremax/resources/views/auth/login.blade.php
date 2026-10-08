@@ -16,6 +16,20 @@
                 <p class="text-muted small">Sistema Web de Gestión para Ferretería</p>
             </div>
 
+            {{-- CUS-02 paso 7: cierre de sesión correcto --}}
+            @if(session('status'))
+                <div class="alert alert-success py-2" role="status">
+                    <i class="bi bi-check-circle me-1"></i>{{ session('status') }}
+                </div>
+            @endif
+
+            {{-- CUS-02 FA 3.2.2: sesión expirada por inactividad --}}
+            @if(session('expirada'))
+                <div class="alert alert-warning py-2" role="alert">
+                    <i class="bi bi-clock-history me-1"></i>{{ session('expirada') }}
+                </div>
+            @endif
+
             {{-- Credenciales incorrectas / bloqueo / cuenta inactiva (FA 3.2.1 – 3.2.3) --}}
             @error('login')
                 <div class="alert alert-danger py-2" role="alert">

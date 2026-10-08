@@ -13,4 +13,7 @@ Route::middleware('guest')->group(function () {
 // ── Rutas que requieren sesión iniciada ─────────────────────────────────────
 Route::middleware('auth')->group(function () {
     Route::get('/', [DashboardController::class, 'index'])->name('dashboard');
+
+    // CUS-02 Cerrar sesión (precondición 4.1: sesión activa)
+    Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 });

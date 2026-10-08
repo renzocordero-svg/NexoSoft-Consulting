@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\LoginRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Str;
@@ -13,7 +14,7 @@ use Illuminate\Validation\ValidationException;
 use Psr\Log\LoggerInterface;
 
 /**
- * CUS-01 Iniciar sesión (FMX_CU1).
+ * CUS-01 Iniciar sesión (FMX_CU1) y CUS-02 Cerrar sesión (FMX_CU2).
  * Clase de control: coordina la interfaz de login y la entidad User.
  */
 class LoginController extends Controller
@@ -27,6 +28,14 @@ class LoginController extends Controller
     public const MSG_CREDENCIALES = 'Las credenciales no coinciden con nuestros registros.';
     public const MSG_BLOQUEO      = 'Demasiados intentos. Vuelva a intentarlo en unos minutos.';
     public const MSG_INACTIVA     = 'Su cuenta se encuentra inactiva. Comuníquese con el administrador.';
+    public const MSG_LOGOUT       = 'Ha cerrado sesión correctamente.';
+    public const MSG_EXPIRADA     = 'Su sesión expiró por inactividad. Vuelva a iniciar sesión.';
+
+    /**
+     * Cookie que marca que este navegador tenía una sesión iniciada. Si llega una petición
+     * con la cookie pero sin sesión válida, la sesión expiró (CUS-02 FA 3.2.2, ver bootstrap/app.php).
+     */
+    public const COOKIE_SESION = 'fmx_sesion';
 
     // Pasos 1-2: mostrar la ventana de inicio de sesión
     public function showLoginForm()
@@ -69,6 +78,7 @@ class LoginController extends Controller
         // Paso 8: regenerar la sesión (evita la fijación de sesión) y reiniciar el contador
         $request->session()->regenerate();
         RateLimiter::clear($key);
+        Cookie::queue(self::COOKIE_SESION, '1'); // dura mientras el navegador esté abierto
 
         // Post condición 5.2: el acceso queda registrado
         $this->logSeguridad()->info('Inicio de sesión exitoso', $this->contexto($request) + [
@@ -78,6 +88,22 @@ class LoginController extends Controller
 
         // Pasos 9-10: el layout arma el menú según el rol y el dashboard da la bienvenida
         return redirect()->intended(route('dashboard'));
+    }
+
+    // CUS-02 Cerrar sesión, pasos 4-7 (la confirmación de los pasos 2-3 está en layouts/app.blade.php)
+    public function logout(Request $request)
+    {
+        $this->logSeguridad()->info('Cierre de sesión', [
+            'usuario_id' => Auth::id(),
+            'ip'         => $request->ip(),
+        ]);
+
+        Auth::logout();                          // Paso 4
+        $request->session()->invalidate();       // Paso 5
+        $request->session()->regenerateToken();  // Paso 6
+        Cookie::queue(Cookie::forget(self::COOKIE_SESION));
+
+        return redirect()->route('login')->with('status', self::MSG_LOGOUT); // Paso 7
     }
 
     private function throttleKey(Request $request): string

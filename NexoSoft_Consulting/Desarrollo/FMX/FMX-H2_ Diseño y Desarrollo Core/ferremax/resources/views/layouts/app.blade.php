@@ -32,8 +32,35 @@
         <span class="text-light small">
             <i class="bi bi-person-circle me-1"></i>{{ auth()->user()->nombre_usuario }}
         </span>
+        {{-- CUS-02 paso 1: «Salir» solo abre la confirmación --}}
+        <button type="button" class="btn btn-sm btn-outline-light"
+                data-bs-toggle="modal" data-bs-target="#modal-cerrar-sesion">
+            <i class="bi bi-box-arrow-right me-1"></i>Salir
+        </button>
     </div>
 </nav>
+
+{{-- CUS-02 pasos 2-3: confirmación del cierre de sesión (FA 3.2.1: «Cancelar» deja todo igual) --}}
+<div class="modal fade" id="modal-cerrar-sesion" tabindex="-1" aria-labelledby="titulo-cerrar-sesion" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="titulo-cerrar-sesion">
+                    <i class="bi bi-box-arrow-right me-1"></i>Cerrar sesión
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cancelar"></button>
+            </div>
+            <div class="modal-body">¿Desea cerrar su sesión?</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <form method="POST" action="{{ route('logout') }}" class="m-0">
+                    @csrf
+                    <button type="submit" class="btn btn-danger">Cerrar sesión</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="container-fluid">
     <div class="row">
