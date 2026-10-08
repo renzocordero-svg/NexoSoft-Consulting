@@ -32,6 +32,20 @@ Tabla `users` (DAS, vista de datos): `nombre_usuario`, `password` (hash), `rol`
 Usuarios de prueba (`php artisan migrate:fresh --seed`): `admin / admin123`,
 `vendedor1 / vendedor123`, `inactivo / inactivo123` (cuenta desactivada).
 
+## C02 · CUS-02 Cerrar sesión
+
+| Especificación (FMX_CU2) | Implementación |
+|---|---|
+| Pasos 1-3 · FA 3.2.1 confirmar o cancelar | modal `#modal-cerrar-sesion` en `layouts/app.blade.php` |
+| Pasos 4-6 · cerrar, invalidar, regenerar token | `LoginController::logout` |
+| Paso 7 · «Ha cerrado sesión correctamente» | `LoginController::logout` + `auth/login.blade.php` |
+| FA 3.2.2 · expiración a los 30 min | `SESSION_LIFETIME=30`; aviso en `bootstrap/app.php` (cookie `fmx_sesion`) |
+| FA 3.2.3 · botón «atrás» tras el cierre | `bootstrap/app.php`: token CSRF vencido (419) → login |
+| Post condición 5.2 | middleware `auth` en las rutas protegidas |
+
+**Configuración necesaria al integrar:** en `.env` (y en `.env.example`) poner
+`SESSION_LIFETIME=30`. Laravel trae 120 minutos por defecto.
+
 ## Pruebas
 
 `tests/Feature/Auth/`. Usan `RefreshDatabase`, así que conviene correrlas con
@@ -39,5 +53,5 @@ SQLite en memoria para no borrar la base de desarrollo: en `phpunit.xml`,
 descomentar `DB_CONNECTION=sqlite` y `DB_DATABASE=:memory:`.
 
 ```bash
-docker compose exec app php artisan test --filter=IniciarSesionTest
+docker compose exec app php artisan test --filter="IniciarSesionTest|CerrarSesionTest|ControlAccesoPorRolTest"
 ```
