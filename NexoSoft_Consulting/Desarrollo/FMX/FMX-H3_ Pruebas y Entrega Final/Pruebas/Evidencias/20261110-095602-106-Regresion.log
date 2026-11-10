@@ -1,0 +1,342 @@
+PHPUnit 11.5.56 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.5.12
+Configuration: C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\phpunit.xml
+
+.DDDDDDDDDDDDDDDDDDDDDD                                           23 / 23 (100%)
+
+Time: 00:01.777, Memory: 48.00 MB
+
+Cu01 (Tests\Feature\Cu01)
+ ✔ Login y bloqueo por tres intentos
+ ✔ Dashboard y permisos
+ ✔ Cuenta inactiva no puede acceder
+ ✔ Todas las vistas disponibles renderizan
+
+Cu02 (Tests\Feature\Cu02)
+ ✔ Cierre de sesion
+ ✔ Logout no acepta get
+
+Cu03 (Tests\Feature\Cu03)
+ ✔ Alta valida checkbox y movimiento inicial
+ ✔ Ajuste no permite stock negativo y audita entrada
+ ✔ Edicion no sobrescribe stock y rechaza duplicado
+ ✔ Desactivar producto con movimientos preserva historial
+
+Cu04 (Tests\Feature\Cu04)
+ ✔ Venta atomica con igv factura y costo historico
+ ✔ Stock insuficiente no deja venta parcial
+ ✔ Rechaza carrito vacio duplicado y producto inactivo
+ ✔ Correlativos para productos distintos
+
+Cu05 (Tests\Feature\Cu05)
+ ✔ Factura restringida al dueno o administrador
+
+Cu06 (Tests\Feature\Cu06)
+ ✔ Historial filtra por vendedor sin permitir suplantacion
+
+Cu07 (Tests\Feature\Cu07)
+ ✔ Movimientos filtrados y exportacion completa
+
+Cu08 (Tests\Feature\Cu08)
+ ✔ Usuario validacion y autoproteccion
+ ✔ Cambio contrasena y desactivacion
+
+Cu09 (Tests\Feature\Cu09)
+ ✔ Reportes sqlite ganancia historica y filtros
+ ✔ Reportes sin ventas
+
+Example (Tests\Feature\Example)
+ ✔ The application returns a successful response
+
+Example (Tests\Unit\Example)
+ ✔ That true is true
+
+22 tests triggered 4 PHP deprecations:
+
+1) C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\vendor\laravel\framework\config\database.php:61
+Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+Triggered by:
+
+* Tests\Feature\Cu01Test::test_cuenta_inactiva_no_puede_acceder
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu01Test.php:37
+
+* Tests\Feature\Cu01Test::test_dashboard_y_permisos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu01Test.php:26
+
+* Tests\Feature\Cu01Test::test_login_y_bloqueo_por_tres_intentos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu01Test.php:13
+
+* Tests\Feature\Cu01Test::test_todas_las_vistas_disponibles_renderizan
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu01Test.php:45
+
+* Tests\Feature\Cu02Test::test_cierre_de_sesion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu02Test.php:12
+
+* Tests\Feature\Cu02Test::test_logout_no_acepta_get
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu02Test.php:19
+
+* Tests\Feature\Cu03Test::test_ajuste_no_permite_stock_negativo_y_audita_entrada
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu03Test.php:20
+
+* Tests\Feature\Cu03Test::test_alta_valida_checkbox_y_movimiento_inicial
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu03Test.php:13
+
+* Tests\Feature\Cu03Test::test_desactivar_producto_con_movimientos_preserva_historial
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu03Test.php:43
+
+* Tests\Feature\Cu03Test::test_edicion_no_sobrescribe_stock_y_rechaza_duplicado
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu03Test.php:32
+
+* Tests\Feature\Cu04Test::test_correlativos_para_productos_distintos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu04Test.php:48
+
+* Tests\Feature\Cu04Test::test_rechaza_carrito_vacio_duplicado_y_producto_inactivo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu04Test.php:36
+
+* Tests\Feature\Cu04Test::test_stock_insuficiente_no_deja_venta_parcial
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu04Test.php:24
+
+* Tests\Feature\Cu04Test::test_venta_atomica_con_igv_factura_y_costo_historico
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu04Test.php:12
+
+* Tests\Feature\Cu05Test::test_factura_restringida_al_dueno_o_administrador
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu05Test.php:12
+
+* Tests\Feature\Cu06Test::test_historial_filtra_por_vendedor_sin_permitir_suplantacion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu06Test.php:12
+
+* Tests\Feature\Cu07Test::test_movimientos_filtrados_y_exportacion_completa
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu07Test.php:13
+
+* Tests\Feature\Cu08Test::test_cambio_contrasena_y_desactivacion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu08Test.php:25
+
+* Tests\Feature\Cu08Test::test_usuario_validacion_y_autoproteccion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu08Test.php:13
+
+* Tests\Feature\Cu09Test::test_reportes_sin_ventas
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu09Test.php:27
+
+* Tests\Feature\Cu09Test::test_reportes_sqlite_ganancia_historica_y_filtros
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu09Test.php:13
+
+* Tests\Feature\ExampleTest::test_the_application_returns_a_successful_response
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\ExampleTest.php:13
+
+2) C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\vendor\laravel\framework\config\database.php:81
+Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+Triggered by:
+
+* Tests\Feature\Cu01Test::test_cuenta_inactiva_no_puede_acceder
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu01Test.php:37
+
+* Tests\Feature\Cu01Test::test_dashboard_y_permisos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu01Test.php:26
+
+* Tests\Feature\Cu01Test::test_login_y_bloqueo_por_tres_intentos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu01Test.php:13
+
+* Tests\Feature\Cu01Test::test_todas_las_vistas_disponibles_renderizan
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu01Test.php:45
+
+* Tests\Feature\Cu02Test::test_cierre_de_sesion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu02Test.php:12
+
+* Tests\Feature\Cu02Test::test_logout_no_acepta_get
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu02Test.php:19
+
+* Tests\Feature\Cu03Test::test_ajuste_no_permite_stock_negativo_y_audita_entrada
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu03Test.php:20
+
+* Tests\Feature\Cu03Test::test_alta_valida_checkbox_y_movimiento_inicial
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu03Test.php:13
+
+* Tests\Feature\Cu03Test::test_desactivar_producto_con_movimientos_preserva_historial
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu03Test.php:43
+
+* Tests\Feature\Cu03Test::test_edicion_no_sobrescribe_stock_y_rechaza_duplicado
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu03Test.php:32
+
+* Tests\Feature\Cu04Test::test_correlativos_para_productos_distintos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu04Test.php:48
+
+* Tests\Feature\Cu04Test::test_rechaza_carrito_vacio_duplicado_y_producto_inactivo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu04Test.php:36
+
+* Tests\Feature\Cu04Test::test_stock_insuficiente_no_deja_venta_parcial
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu04Test.php:24
+
+* Tests\Feature\Cu04Test::test_venta_atomica_con_igv_factura_y_costo_historico
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu04Test.php:12
+
+* Tests\Feature\Cu05Test::test_factura_restringida_al_dueno_o_administrador
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu05Test.php:12
+
+* Tests\Feature\Cu06Test::test_historial_filtra_por_vendedor_sin_permitir_suplantacion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu06Test.php:12
+
+* Tests\Feature\Cu07Test::test_movimientos_filtrados_y_exportacion_completa
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu07Test.php:13
+
+* Tests\Feature\Cu08Test::test_cambio_contrasena_y_desactivacion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu08Test.php:25
+
+* Tests\Feature\Cu08Test::test_usuario_validacion_y_autoproteccion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu08Test.php:13
+
+* Tests\Feature\Cu09Test::test_reportes_sin_ventas
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu09Test.php:27
+
+* Tests\Feature\Cu09Test::test_reportes_sqlite_ganancia_historica_y_filtros
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu09Test.php:13
+
+* Tests\Feature\ExampleTest::test_the_application_returns_a_successful_response
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\ExampleTest.php:13
+
+3) C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\config\database.php:61
+Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+Triggered by:
+
+* Tests\Feature\Cu01Test::test_cuenta_inactiva_no_puede_acceder
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu01Test.php:37
+
+* Tests\Feature\Cu01Test::test_dashboard_y_permisos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu01Test.php:26
+
+* Tests\Feature\Cu01Test::test_login_y_bloqueo_por_tres_intentos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu01Test.php:13
+
+* Tests\Feature\Cu01Test::test_todas_las_vistas_disponibles_renderizan
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu01Test.php:45
+
+* Tests\Feature\Cu02Test::test_cierre_de_sesion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu02Test.php:12
+
+* Tests\Feature\Cu02Test::test_logout_no_acepta_get
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu02Test.php:19
+
+* Tests\Feature\Cu03Test::test_ajuste_no_permite_stock_negativo_y_audita_entrada
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu03Test.php:20
+
+* Tests\Feature\Cu03Test::test_alta_valida_checkbox_y_movimiento_inicial
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu03Test.php:13
+
+* Tests\Feature\Cu03Test::test_desactivar_producto_con_movimientos_preserva_historial
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu03Test.php:43
+
+* Tests\Feature\Cu03Test::test_edicion_no_sobrescribe_stock_y_rechaza_duplicado
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu03Test.php:32
+
+* Tests\Feature\Cu04Test::test_correlativos_para_productos_distintos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu04Test.php:48
+
+* Tests\Feature\Cu04Test::test_rechaza_carrito_vacio_duplicado_y_producto_inactivo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu04Test.php:36
+
+* Tests\Feature\Cu04Test::test_stock_insuficiente_no_deja_venta_parcial
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu04Test.php:24
+
+* Tests\Feature\Cu04Test::test_venta_atomica_con_igv_factura_y_costo_historico
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu04Test.php:12
+
+* Tests\Feature\Cu05Test::test_factura_restringida_al_dueno_o_administrador
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu05Test.php:12
+
+* Tests\Feature\Cu06Test::test_historial_filtra_por_vendedor_sin_permitir_suplantacion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu06Test.php:12
+
+* Tests\Feature\Cu07Test::test_movimientos_filtrados_y_exportacion_completa
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu07Test.php:13
+
+* Tests\Feature\Cu08Test::test_cambio_contrasena_y_desactivacion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu08Test.php:25
+
+* Tests\Feature\Cu08Test::test_usuario_validacion_y_autoproteccion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu08Test.php:13
+
+* Tests\Feature\Cu09Test::test_reportes_sin_ventas
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu09Test.php:27
+
+* Tests\Feature\Cu09Test::test_reportes_sqlite_ganancia_historica_y_filtros
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu09Test.php:13
+
+* Tests\Feature\ExampleTest::test_the_application_returns_a_successful_response
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\ExampleTest.php:13
+
+4) C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\config\database.php:81
+Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+Triggered by:
+
+* Tests\Feature\Cu01Test::test_cuenta_inactiva_no_puede_acceder
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu01Test.php:37
+
+* Tests\Feature\Cu01Test::test_dashboard_y_permisos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu01Test.php:26
+
+* Tests\Feature\Cu01Test::test_login_y_bloqueo_por_tres_intentos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu01Test.php:13
+
+* Tests\Feature\Cu01Test::test_todas_las_vistas_disponibles_renderizan
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu01Test.php:45
+
+* Tests\Feature\Cu02Test::test_cierre_de_sesion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu02Test.php:12
+
+* Tests\Feature\Cu02Test::test_logout_no_acepta_get
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu02Test.php:19
+
+* Tests\Feature\Cu03Test::test_ajuste_no_permite_stock_negativo_y_audita_entrada
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu03Test.php:20
+
+* Tests\Feature\Cu03Test::test_alta_valida_checkbox_y_movimiento_inicial
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu03Test.php:13
+
+* Tests\Feature\Cu03Test::test_desactivar_producto_con_movimientos_preserva_historial
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu03Test.php:43
+
+* Tests\Feature\Cu03Test::test_edicion_no_sobrescribe_stock_y_rechaza_duplicado
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu03Test.php:32
+
+* Tests\Feature\Cu04Test::test_correlativos_para_productos_distintos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu04Test.php:48
+
+* Tests\Feature\Cu04Test::test_rechaza_carrito_vacio_duplicado_y_producto_inactivo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu04Test.php:36
+
+* Tests\Feature\Cu04Test::test_stock_insuficiente_no_deja_venta_parcial
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu04Test.php:24
+
+* Tests\Feature\Cu04Test::test_venta_atomica_con_igv_factura_y_costo_historico
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu04Test.php:12
+
+* Tests\Feature\Cu05Test::test_factura_restringida_al_dueno_o_administrador
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu05Test.php:12
+
+* Tests\Feature\Cu06Test::test_historial_filtra_por_vendedor_sin_permitir_suplantacion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu06Test.php:12
+
+* Tests\Feature\Cu07Test::test_movimientos_filtrados_y_exportacion_completa
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu07Test.php:13
+
+* Tests\Feature\Cu08Test::test_cambio_contrasena_y_desactivacion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu08Test.php:25
+
+* Tests\Feature\Cu08Test::test_usuario_validacion_y_autoproteccion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu08Test.php:13
+
+* Tests\Feature\Cu09Test::test_reportes_sin_ventas
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu09Test.php:27
+
+* Tests\Feature\Cu09Test::test_reportes_sqlite_ganancia_historica_y_filtros
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\Cu09Test.php:13
+
+* Tests\Feature\ExampleTest::test_the_application_returns_a_successful_response
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\tests\Feature\ExampleTest.php:13
+
+OK, but there were issues!
+Tests: 23, Assertions: 124, Deprecations: 4.
