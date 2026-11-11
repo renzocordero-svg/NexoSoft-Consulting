@@ -1,0 +1,20 @@
+PHPUnit 11.5.56 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.5.12
+Configuration: C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\phpunit.xml
+
+DDDDDDD                                                             7 / 7 (100%)
+
+Time: 00:01.106, Memory: 42.00 MB
+
+Integracion Venta (Tests\Hito3\IntegracionVenta)
+ ✔ Cp11 venta con varios productos registra importes y movimientos
+ ✔ Cp12 stock insuficiente conserva todos los productos y el carrito
+ ✔ Cp13 fallo al emitir factura revierte venta stock auditoria y secuencia
+ ✔ Cp15 facturas consecutivas y unicas para ventas sucesivas
+ ✔ Cp17 precio y costo historicos se conservan tras cambiar catalogo
+ ✔ Carrito vacio no genera registros ni consume correlativo
+ ✔ Venta de la ultima unidad y rechazo posterior sin stock negativo
+
+OK, but there were issues!
+Tests: 7, Assertions: 54, Deprecations: 4.

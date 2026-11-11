@@ -1,0 +1,56 @@
+PHPUnit 11.5.56 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.5.12
+Configuration: C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\phpunit.xml
+
+.DDDDDDDDDDDDDDDDDDDDDD                                           23 / 23 (100%)
+
+Time: 00:04.825, Memory: 48.00 MB
+
+Cu01 (Tests\Feature\Cu01)
+ ✔ Login y bloqueo por tres intentos
+ ✔ Dashboard y permisos
+ ✔ Cuenta inactiva no puede acceder
+ ✔ Todas las vistas disponibles renderizan
+
+Cu02 (Tests\Feature\Cu02)
+ ✔ Cierre de sesion
+ ✔ Logout no acepta get
+
+Cu03 (Tests\Feature\Cu03)
+ ✔ Alta valida checkbox y movimiento inicial
+ ✔ Ajuste no permite stock negativo y audita entrada
+ ✔ Edicion no sobrescribe stock y rechaza duplicado
+ ✔ Desactivar producto con movimientos preserva historial
+
+Cu04 (Tests\Feature\Cu04)
+ ✔ Venta atomica con igv factura y costo historico
+ ✔ Stock insuficiente no deja venta parcial
+ ✔ Rechaza carrito vacio duplicado y producto inactivo
+ ✔ Correlativos para productos distintos
+
+Cu05 (Tests\Feature\Cu05)
+ ✔ Factura restringida al dueno o administrador
+
+Cu06 (Tests\Feature\Cu06)
+ ✔ Historial filtra por vendedor sin permitir suplantacion
+
+Cu07 (Tests\Feature\Cu07)
+ ✔ Movimientos filtrados y exportacion completa
+
+Cu08 (Tests\Feature\Cu08)
+ ✔ Usuario validacion y autoproteccion
+ ✔ Cambio contrasena y desactivacion
+
+Cu09 (Tests\Feature\Cu09)
+ ✔ Reportes sqlite ganancia historica y filtros
+ ✔ Reportes sin ventas
+
+Example (Tests\Feature\Example)
+ ✔ The application returns a successful response
+
+Example (Tests\Unit\Example)
+ ✔ That true is true
+
+OK, but there were issues!
+Tests: 23, Assertions: 124, Deprecations: 4.
