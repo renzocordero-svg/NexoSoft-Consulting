@@ -145,11 +145,6 @@
         <i class="bi bi-exclamation-triangle-fill text-warning me-1"></i>
         Productos bajo stock mínimo
     </h5>
-    @php
-        $bajoStock = \App\Models\Producto::where('activo', true)
-            ->whereColumn('cantidad_stock', '<=', 'stock_minimo')
-            ->get();
-    @endphp
     @if($bajoStock->isEmpty())
         <p class="text-muted">Todos los productos tienen stock suficiente.</p>
     @else
