@@ -1,0 +1,312 @@
+PHPUnit 11.5.56 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.5.12
+Configuration: C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\phpunit.xml
+
+DDDDDDDDDDDDDDDDDDDDD                                             21 / 21 (100%)
+
+Time: 00:29.670, Memory: 46.00 MB
+
+Cierre Integracion (Tests\Hito3\CierreIntegracion)
+ ✔ Cp20 cp26 compra venta ajuste y reporte concilian sus saldos
+ ✔ Cp27 reporte concilia facturas y costos historicos tras cambiar catalogo
+ ✔ Cp28 rankings limitan a cinco y excluyen productos sin ventas
+ ✔ Fallo al auditar movimiento revierte el cambio de stock
+ ✔ Reporte vacio no divide por cero y vendedor no accede a reportes
+
+Consulta Factura Historial (Tests\Hito3\ConsultaFacturaHistorial)
+ ✔ Cp16 consultar factura muestra detalle importes y no modifica datos
+ ✔ Cp17 factura http conserva importes tras cambiar precio y costo
+ ✔ Cp18 propietario y administrador acceden pero otro vendedor no
+ ✔ Consultas exigen sesion y rechazan una cuenta desactivada
+ ✔ Cp18 vendedor no puede ampliar historial al suplantar el filtro
+ ✔ Cp19 historial combina vendedor y fechas incluyendo ambos limites
+ ✔ Cp19 filtros se conservan al avanzar pagina sin incluir otras ventas
+ ✔ Cp19 rango invalido o vendedor inexistente devuelve validacion
+ ✔ Factura inexistente devuelve 404 para usuario autenticado
+
+Integracion Venta (Tests\Hito3\IntegracionVenta)
+ ✔ Cp11 venta con varios productos registra importes y movimientos
+ ✔ Cp12 stock insuficiente conserva todos los productos y el carrito
+ ✔ Cp13 fallo al emitir factura revierte venta stock auditoria y secuencia
+ ✔ Cp15 facturas consecutivas y unicas para ventas sucesivas
+ ✔ Cp17 precio y costo historicos se conservan tras cambiar catalogo
+ ✔ Carrito vacio no genera registros ni consume correlativo
+ ✔ Venta de la ultima unidad y rechazo posterior sin stock negativo
+
+21 tests triggered 4 PHP deprecations:
+
+1) C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\vendor\laravel\framework\config\database.php:61
+Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+Triggered by:
+
+* Tests\Hito3\CierreIntegracionTest::test_cp20_cp26_compra_venta_ajuste_y_reporte_concilian_sus_saldos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:27
+
+* Tests\Hito3\CierreIntegracionTest::test_cp27_reporte_concilia_facturas_y_costos_historicos_tras_cambiar_catalogo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:51
+
+* Tests\Hito3\CierreIntegracionTest::test_cp28_rankings_limitan_a_cinco_y_excluyen_productos_sin_ventas
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:69
+
+* Tests\Hito3\CierreIntegracionTest::test_fallo_al_auditar_movimiento_revierte_el_cambio_de_stock
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:86
+
+* Tests\Hito3\CierreIntegracionTest::test_reporte_vacio_no_divide_por_cero_y_vendedor_no_accede_a_reportes
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:110
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_consultas_exigen_sesion_y_rechazan_una_cuenta_desactivada
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:73
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp16_consultar_factura_muestra_detalle_importes_y_no_modifica_datos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:23
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp17_factura_http_conserva_importes_tras_cambiar_precio_y_costo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:45
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp18_propietario_y_administrador_acceden_pero_otro_vendedor_no
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:59
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp18_vendedor_no_puede_ampliar_historial_al_suplantar_el_filtro
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:88
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp19_filtros_se_conservan_al_avanzar_pagina_sin_incluir_otras_ventas
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:131
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp19_historial_combina_vendedor_y_fechas_incluyendo_ambos_limites
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:109
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp19_rango_invalido_o_vendedor_inexistente_devuelve_validacion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:162
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_factura_inexistente_devuelve_404_para_usuario_autenticado
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:175
+
+* Tests\Hito3\IntegracionVentaTest::test_carrito_vacio_no_genera_registros_ni_consume_correlativo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:125
+
+* Tests\Hito3\IntegracionVentaTest::test_cp11_venta_con_varios_productos_registra_importes_y_movimientos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:27
+
+* Tests\Hito3\IntegracionVentaTest::test_cp12_stock_insuficiente_conserva_todos_los_productos_y_el_carrito
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:54
+
+* Tests\Hito3\IntegracionVentaTest::test_cp13_fallo_al_emitir_factura_revierte_venta_stock_auditoria_y_secuencia
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:71
+
+* Tests\Hito3\IntegracionVentaTest::test_cp15_facturas_consecutivas_y_unicas_para_ventas_sucesivas
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:96
+
+* Tests\Hito3\IntegracionVentaTest::test_cp17_precio_y_costo_historicos_se_conservan_tras_cambiar_catalogo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:110
+
+* Tests\Hito3\IntegracionVentaTest::test_venta_de_la_ultima_unidad_y_rechazo_posterior_sin_stock_negativo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:131
+
+2) C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\vendor\laravel\framework\config\database.php:81
+Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+Triggered by:
+
+* Tests\Hito3\CierreIntegracionTest::test_cp20_cp26_compra_venta_ajuste_y_reporte_concilian_sus_saldos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:27
+
+* Tests\Hito3\CierreIntegracionTest::test_cp27_reporte_concilia_facturas_y_costos_historicos_tras_cambiar_catalogo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:51
+
+* Tests\Hito3\CierreIntegracionTest::test_cp28_rankings_limitan_a_cinco_y_excluyen_productos_sin_ventas
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:69
+
+* Tests\Hito3\CierreIntegracionTest::test_fallo_al_auditar_movimiento_revierte_el_cambio_de_stock
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:86
+
+* Tests\Hito3\CierreIntegracionTest::test_reporte_vacio_no_divide_por_cero_y_vendedor_no_accede_a_reportes
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:110
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_consultas_exigen_sesion_y_rechazan_una_cuenta_desactivada
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:73
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp16_consultar_factura_muestra_detalle_importes_y_no_modifica_datos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:23
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp17_factura_http_conserva_importes_tras_cambiar_precio_y_costo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:45
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp18_propietario_y_administrador_acceden_pero_otro_vendedor_no
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:59
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp18_vendedor_no_puede_ampliar_historial_al_suplantar_el_filtro
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:88
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp19_filtros_se_conservan_al_avanzar_pagina_sin_incluir_otras_ventas
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:131
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp19_historial_combina_vendedor_y_fechas_incluyendo_ambos_limites
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:109
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp19_rango_invalido_o_vendedor_inexistente_devuelve_validacion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:162
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_factura_inexistente_devuelve_404_para_usuario_autenticado
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:175
+
+* Tests\Hito3\IntegracionVentaTest::test_carrito_vacio_no_genera_registros_ni_consume_correlativo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:125
+
+* Tests\Hito3\IntegracionVentaTest::test_cp11_venta_con_varios_productos_registra_importes_y_movimientos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:27
+
+* Tests\Hito3\IntegracionVentaTest::test_cp12_stock_insuficiente_conserva_todos_los_productos_y_el_carrito
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:54
+
+* Tests\Hito3\IntegracionVentaTest::test_cp13_fallo_al_emitir_factura_revierte_venta_stock_auditoria_y_secuencia
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:71
+
+* Tests\Hito3\IntegracionVentaTest::test_cp15_facturas_consecutivas_y_unicas_para_ventas_sucesivas
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:96
+
+* Tests\Hito3\IntegracionVentaTest::test_cp17_precio_y_costo_historicos_se_conservan_tras_cambiar_catalogo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:110
+
+* Tests\Hito3\IntegracionVentaTest::test_venta_de_la_ultima_unidad_y_rechazo_posterior_sin_stock_negativo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:131
+
+3) C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\config\database.php:61
+Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+Triggered by:
+
+* Tests\Hito3\CierreIntegracionTest::test_cp20_cp26_compra_venta_ajuste_y_reporte_concilian_sus_saldos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:27
+
+* Tests\Hito3\CierreIntegracionTest::test_cp27_reporte_concilia_facturas_y_costos_historicos_tras_cambiar_catalogo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:51
+
+* Tests\Hito3\CierreIntegracionTest::test_cp28_rankings_limitan_a_cinco_y_excluyen_productos_sin_ventas
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:69
+
+* Tests\Hito3\CierreIntegracionTest::test_fallo_al_auditar_movimiento_revierte_el_cambio_de_stock
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:86
+
+* Tests\Hito3\CierreIntegracionTest::test_reporte_vacio_no_divide_por_cero_y_vendedor_no_accede_a_reportes
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:110
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_consultas_exigen_sesion_y_rechazan_una_cuenta_desactivada
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:73
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp16_consultar_factura_muestra_detalle_importes_y_no_modifica_datos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:23
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp17_factura_http_conserva_importes_tras_cambiar_precio_y_costo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:45
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp18_propietario_y_administrador_acceden_pero_otro_vendedor_no
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:59
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp18_vendedor_no_puede_ampliar_historial_al_suplantar_el_filtro
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:88
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp19_filtros_se_conservan_al_avanzar_pagina_sin_incluir_otras_ventas
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:131
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp19_historial_combina_vendedor_y_fechas_incluyendo_ambos_limites
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:109
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp19_rango_invalido_o_vendedor_inexistente_devuelve_validacion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:162
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_factura_inexistente_devuelve_404_para_usuario_autenticado
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:175
+
+* Tests\Hito3\IntegracionVentaTest::test_carrito_vacio_no_genera_registros_ni_consume_correlativo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:125
+
+* Tests\Hito3\IntegracionVentaTest::test_cp11_venta_con_varios_productos_registra_importes_y_movimientos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:27
+
+* Tests\Hito3\IntegracionVentaTest::test_cp12_stock_insuficiente_conserva_todos_los_productos_y_el_carrito
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:54
+
+* Tests\Hito3\IntegracionVentaTest::test_cp13_fallo_al_emitir_factura_revierte_venta_stock_auditoria_y_secuencia
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:71
+
+* Tests\Hito3\IntegracionVentaTest::test_cp15_facturas_consecutivas_y_unicas_para_ventas_sucesivas
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:96
+
+* Tests\Hito3\IntegracionVentaTest::test_cp17_precio_y_costo_historicos_se_conservan_tras_cambiar_catalogo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:110
+
+* Tests\Hito3\IntegracionVentaTest::test_venta_de_la_ultima_unidad_y_rechazo_posterior_sin_stock_negativo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:131
+
+4) C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\config\database.php:81
+Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+Triggered by:
+
+* Tests\Hito3\CierreIntegracionTest::test_cp20_cp26_compra_venta_ajuste_y_reporte_concilian_sus_saldos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:27
+
+* Tests\Hito3\CierreIntegracionTest::test_cp27_reporte_concilia_facturas_y_costos_historicos_tras_cambiar_catalogo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:51
+
+* Tests\Hito3\CierreIntegracionTest::test_cp28_rankings_limitan_a_cinco_y_excluyen_productos_sin_ventas
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:69
+
+* Tests\Hito3\CierreIntegracionTest::test_fallo_al_auditar_movimiento_revierte_el_cambio_de_stock
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:86
+
+* Tests\Hito3\CierreIntegracionTest::test_reporte_vacio_no_divide_por_cero_y_vendedor_no_accede_a_reportes
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\CierreIntegracionTest.php:110
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_consultas_exigen_sesion_y_rechazan_una_cuenta_desactivada
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:73
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp16_consultar_factura_muestra_detalle_importes_y_no_modifica_datos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:23
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp17_factura_http_conserva_importes_tras_cambiar_precio_y_costo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:45
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp18_propietario_y_administrador_acceden_pero_otro_vendedor_no
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:59
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp18_vendedor_no_puede_ampliar_historial_al_suplantar_el_filtro
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:88
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp19_filtros_se_conservan_al_avanzar_pagina_sin_incluir_otras_ventas
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:131
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp19_historial_combina_vendedor_y_fechas_incluyendo_ambos_limites
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:109
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_cp19_rango_invalido_o_vendedor_inexistente_devuelve_validacion
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:162
+
+* Tests\Hito3\ConsultaFacturaHistorialTest::test_factura_inexistente_devuelve_404_para_usuario_autenticado
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\ConsultaFacturaHistorialTest.php:175
+
+* Tests\Hito3\IntegracionVentaTest::test_carrito_vacio_no_genera_registros_ni_consume_correlativo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:125
+
+* Tests\Hito3\IntegracionVentaTest::test_cp11_venta_con_varios_productos_registra_importes_y_movimientos
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:27
+
+* Tests\Hito3\IntegracionVentaTest::test_cp12_stock_insuficiente_conserva_todos_los_productos_y_el_carrito
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:54
+
+* Tests\Hito3\IntegracionVentaTest::test_cp13_fallo_al_emitir_factura_revierte_venta_stock_auditoria_y_secuencia
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:71
+
+* Tests\Hito3\IntegracionVentaTest::test_cp15_facturas_consecutivas_y_unicas_para_ventas_sucesivas
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:96
+
+* Tests\Hito3\IntegracionVentaTest::test_cp17_precio_y_costo_historicos_se_conservan_tras_cambiar_catalogo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:110
+
+* Tests\Hito3\IntegracionVentaTest::test_venta_de_la_ultima_unidad_y_rechazo_posterior_sin_stock_negativo
+  C:\Users\User\Desktop\fmx\NexoSoft-Consulting\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\tests\IntegracionVentaTest.php:131
+
+OK, but there were issues!
+Tests: 21, Assertions: 166, Deprecations: 4.
