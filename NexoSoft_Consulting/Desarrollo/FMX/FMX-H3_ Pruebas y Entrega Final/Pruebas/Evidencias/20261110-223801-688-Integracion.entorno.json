@@ -1,0 +1,13 @@
+{
+  "inicio": "2026-11-10T22:38:01.8557588-05:00",
+  "fin": "2026-11-10T22:38:32.9210111-05:00",
+  "suite": "Integracion",
+  "revision_base": "ac9e391ceddb9e8424372ebb81702e72f73bee08",
+  "rama": "tests-jfranm",
+  "cambios_sin_commit": "?? \"../../FMX-H3_ Pruebas y Entrega Final/Pruebas/tests/ConsultaFacturaHistorialTest.php\"",
+  "php": "PHP 8.5.12 (cli) (built: Oct 20 2026 04:19:35) (ZTS Visual C++ 2022 x64)\r\nCopyright (c) The PHP Group\r\nBuilt by The PHP Group\r\nZend Engine v4.5.12, Copyright (c) Zend Technologies\r\n    with Zend OPcache v8.5.12, Copyright (c), by Zend Technologies",
+  "configuracion": "C:\\Users\\User\\Desktop\\fmx\\NexoSoft-Consulting\\NexoSoft_Consulting\\Desarrollo\\FMX\\FMX-H3_ Pruebas y Entrega Final\\Pruebas\\phpunit.xml",
+  "base_de_pruebas": "SQLite :memory:",
+  "codigo_salida": 0,
+  "nota": "La revisión identifica la base. Los cambios sin commit también forman parte de lo probado. Las fechas son las del equipo ejecutor."
+}
