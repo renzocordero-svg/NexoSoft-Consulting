@@ -1,5 +1,5 @@
 param(
-    [ValidateSet('Integracion', 'Regresion')]
+    [ValidateSet('Integracion', 'Regresion', 'Atomicidad')]
     [string]$Suite = 'Integracion',
     [string]$Php = 'php'
 )
@@ -19,6 +19,7 @@ New-Item -ItemType Directory -Force -Path $evidencePath | Out-Null
 $runId = Get-Date -Format 'yyyyMMdd-HHmmss-fff'
 $prefix = Join-Path $evidencePath "$runId-$Suite"
 $configPath = if ($Suite -eq 'Integracion') { Join-Path $PSScriptRoot 'phpunit.xml' } else { Join-Path $appPath 'phpunit.xml' }
+if ($Suite -eq 'Atomicidad') { $configPath = Join-Path $PSScriptRoot 'IPC/phpunit.xml' }
 
 Push-Location $appPath
 try {

@@ -1,0 +1,13 @@
+{
+  "inicio": "2026-11-16T23:55:16.8958111-05:00",
+  "fin": "2026-11-16T23:55:18.3142883-05:00",
+  "suite": "Atomicidad",
+  "revision_base": "e0c434e7b7c1e9ad5699b5e3e4a40640dc633363",
+  "rama": "develop",
+  "cambios_sin_commit": "M \"../../FMX-H3_ Pruebas y Entrega Final/Pruebas/Ejecutar-Pruebas.ps1\"\r\n?? \"../../FMX-H3_ Pruebas y Entrega Final/Pruebas/IPC/\"",
+  "php": "PHP 8.5.12 (cli) (built: Oct 20 2026 04:19:35) (ZTS Visual C++ 2022 x64)\r\nCopyright (c) The PHP Group\r\nBuilt by The PHP Group\r\nZend Engine v4.5.12, Copyright (c) Zend Technologies\r\n    with Zend OPcache v8.5.12, Copyright (c), by Zend Technologies",
+  "configuracion": "C:\\Users\\User\\Desktop\\fmx\\rama-develop\\NexoSoft-Consulting-develop\\NexoSoft_Consulting\\Desarrollo\\FMX\\FMX-H3_ Pruebas y Entrega Final\\Pruebas\\IPC\\phpunit.xml",
+  "base_de_pruebas": "SQLite :memory:",
+  "codigo_salida": 0,
+  "nota": "La revisión identifica la base. Los cambios sin commit también forman parte de lo probado. Las fechas son las del equipo ejecutor."
+}
