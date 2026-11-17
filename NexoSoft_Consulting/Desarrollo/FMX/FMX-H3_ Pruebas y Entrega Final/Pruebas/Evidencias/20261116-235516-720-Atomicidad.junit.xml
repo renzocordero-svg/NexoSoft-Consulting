@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\phpunit.xml" tests="6" assertions="24" errors="0" failures="0" skipped="0" time="1.126758">
+    <testsuite name="FMX IPC Atomicidad" tests="6" assertions="24" errors="0" failures="0" skipped="0" time="1.126758">
+      <testsuite name="Tests\IPC\AtomicidadTest" file="C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php" tests="6" assertions="24" errors="0" failures="0" skipped="0" time="1.126758">
+        <testcase name="test_at01_venta_valida_confirma_todos_los_efectos" file="C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php" line="26" class="Tests\IPC\AtomicidadTest" classname="Tests.IPC.AtomicidadTest" assertions="8" time="1.040831"/>
+        <testcase name="test_at02_stock_insuficiente_deja_la_base_sin_cambios" file="C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php" line="41" class="Tests\IPC\AtomicidadTest" classname="Tests.IPC.AtomicidadTest" assertions="2" time="0.019279"/>
+        <testcase name="test_at03_fallo_de_factura_revierte_y_permite_reintento" file="C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php" line="55" class="Tests\IPC\AtomicidadTest" classname="Tests.IPC.AtomicidadTest" assertions="3" time="0.017085"/>
+        <testcase name="test_at04_fallo_en_segundo_producto_revierte_tambien_el_primero" file="C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php" line="75" class="Tests\IPC\AtomicidadTest" classname="Tests.IPC.AtomicidadTest" assertions="4" time="0.016505"/>
+        <testcase name="test_at05_fallo_de_auditoria_revierte_entrada_de_inventario" file="C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php" line="104" class="Tests\IPC\AtomicidadTest" classname="Tests.IPC.AtomicidadTest" assertions="2" time="0.015444"/>
+        <testcase name="test_at06_rechazo_posterior_no_altera_venta_anterior_ni_secuencia" file="C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php" line="123" class="Tests\IPC\AtomicidadTest" classname="Tests.IPC.AtomicidadTest" assertions="5" time="0.017614"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

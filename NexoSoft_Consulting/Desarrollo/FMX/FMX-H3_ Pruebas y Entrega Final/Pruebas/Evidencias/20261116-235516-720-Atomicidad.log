@@ -1,0 +1,113 @@
+PHPUnit 11.5.56 by Sebastian Bergmann and contributors.
+
+Runtime:       PHP 8.5.12
+Configuration: C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\phpunit.xml
+
+DDDDDD                                                              6 / 6 (100%)
+
+Time: 00:01.139, Memory: 40.00 MB
+
+Atomicidad (Tests\IPC\Atomicidad)
+ ✔ At01 venta valida confirma todos los efectos
+ ✔ At02 stock insuficiente deja la base sin cambios
+ ✔ At03 fallo de factura revierte y permite reintento
+ ✔ At04 fallo en segundo producto revierte tambien el primero
+ ✔ At05 fallo de auditoria revierte entrada de inventario
+ ✔ At06 rechazo posterior no altera venta anterior ni secuencia
+
+6 tests triggered 4 PHP deprecations:
+
+1) C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\vendor\laravel\framework\config\database.php:61
+Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+Triggered by:
+
+* Tests\IPC\AtomicidadTest::test_at01_venta_valida_confirma_todos_los_efectos
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:26
+
+* Tests\IPC\AtomicidadTest::test_at02_stock_insuficiente_deja_la_base_sin_cambios
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:41
+
+* Tests\IPC\AtomicidadTest::test_at03_fallo_de_factura_revierte_y_permite_reintento
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:55
+
+* Tests\IPC\AtomicidadTest::test_at04_fallo_en_segundo_producto_revierte_tambien_el_primero
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:75
+
+* Tests\IPC\AtomicidadTest::test_at05_fallo_de_auditoria_revierte_entrada_de_inventario
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:104
+
+* Tests\IPC\AtomicidadTest::test_at06_rechazo_posterior_no_altera_venta_anterior_ni_secuencia
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:123
+
+2) C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\vendor\laravel\framework\config\database.php:81
+Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+Triggered by:
+
+* Tests\IPC\AtomicidadTest::test_at01_venta_valida_confirma_todos_los_efectos
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:26
+
+* Tests\IPC\AtomicidadTest::test_at02_stock_insuficiente_deja_la_base_sin_cambios
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:41
+
+* Tests\IPC\AtomicidadTest::test_at03_fallo_de_factura_revierte_y_permite_reintento
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:55
+
+* Tests\IPC\AtomicidadTest::test_at04_fallo_en_segundo_producto_revierte_tambien_el_primero
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:75
+
+* Tests\IPC\AtomicidadTest::test_at05_fallo_de_auditoria_revierte_entrada_de_inventario
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:104
+
+* Tests\IPC\AtomicidadTest::test_at06_rechazo_posterior_no_altera_venta_anterior_ni_secuencia
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:123
+
+3) C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\config\database.php:61
+Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+Triggered by:
+
+* Tests\IPC\AtomicidadTest::test_at01_venta_valida_confirma_todos_los_efectos
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:26
+
+* Tests\IPC\AtomicidadTest::test_at02_stock_insuficiente_deja_la_base_sin_cambios
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:41
+
+* Tests\IPC\AtomicidadTest::test_at03_fallo_de_factura_revierte_y_permite_reintento
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:55
+
+* Tests\IPC\AtomicidadTest::test_at04_fallo_en_segundo_producto_revierte_tambien_el_primero
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:75
+
+* Tests\IPC\AtomicidadTest::test_at05_fallo_de_auditoria_revierte_entrada_de_inventario
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:104
+
+* Tests\IPC\AtomicidadTest::test_at06_rechazo_posterior_no_altera_venta_anterior_ni_secuencia
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:123
+
+4) C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H2_ Diseño y Desarrollo Core\App-ferremax\config\database.php:81
+Constant PDO::MYSQL_ATTR_SSL_CA is deprecated since 8.5, use Pdo\Mysql::ATTR_SSL_CA instead
+
+Triggered by:
+
+* Tests\IPC\AtomicidadTest::test_at01_venta_valida_confirma_todos_los_efectos
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:26
+
+* Tests\IPC\AtomicidadTest::test_at02_stock_insuficiente_deja_la_base_sin_cambios
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:41
+
+* Tests\IPC\AtomicidadTest::test_at03_fallo_de_factura_revierte_y_permite_reintento
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:55
+
+* Tests\IPC\AtomicidadTest::test_at04_fallo_en_segundo_producto_revierte_tambien_el_primero
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:75
+
+* Tests\IPC\AtomicidadTest::test_at05_fallo_de_auditoria_revierte_entrada_de_inventario
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:104
+
+* Tests\IPC\AtomicidadTest::test_at06_rechazo_posterior_no_altera_venta_anterior_ni_secuencia
+  C:\Users\User\Desktop\fmx\rama-develop\NexoSoft-Consulting-develop\NexoSoft_Consulting\Desarrollo\FMX\FMX-H3_ Pruebas y Entrega Final\Pruebas\IPC\tests\AtomicidadTest.php:123
+
+OK, but there were issues!
+Tests: 6, Assertions: 24, Deprecations: 4.

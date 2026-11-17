@@ -2,6 +2,8 @@
 
 Esta carpeta reúne las pruebas de integración y la evidencia de cada ejecución. Prueba la aplicación de `FMX-H2_ Diseño y Desarrollo Core/App-ferremax`. La línea base se conserva como referencia.
 
+El [informe FMX_IPC](../FMX_IPC.docx) documenta seis pruebas específicas de atomicidad y los escenarios de concurrencia pendientes en MySQL. La [guía IPC](IPC/README.md) explica la suite `Atomicidad`, que se ejecuta con `Ejecutar-Pruebas.ps1 -Suite Atomicidad`.
+
 El [informe inicial de integración](FMX_IPI.md) contiene los resultados observados, enlaces a logs y JUnit, incidencias del entorno y comprobaciones pendientes.
 
 La [ampliación del martes sobre facturas e historial](FMX_IPI_Martes.md) documenta nueve casos HTTP adicionales, sus resultados y evidencias. La suite de Hito 3 contiene ahora 16 pruebas: las siete iniciales y las nueve de consulta y permisos.
