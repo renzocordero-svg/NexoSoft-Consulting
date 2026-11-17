@@ -6,6 +6,8 @@ El [informe inicial de integración](FMX_IPI.md) contiene los resultados observa
 
 La [ampliación del martes sobre facturas e historial](FMX_IPI_Martes.md) documenta nueve casos HTTP adicionales, sus resultados y evidencias. La suite de Hito 3 contiene ahora 16 pruebas: las siete iniciales y las nueve de consulta y permisos.
 
+El [informe del miércoles](FMX_IPI_Miercoles.md) amplía la conciliación de inventario, auditoría y reportes con cinco pruebas más. La suite actual contiene 21 pruebas. El [registro de verificación manual](FMX_Verificacion_Manual.md) identifica las comprobaciones de concurrencia, impresión y rendimiento que aún no se han ejecutado.
+
 ## Ejecución desde PowerShell
 
 Requisitos: PHP compatible con el proyecto, PDO SQLite y dependencias instaladas desde el `composer.lock` de la aplicación. Dentro de esta carpeta:

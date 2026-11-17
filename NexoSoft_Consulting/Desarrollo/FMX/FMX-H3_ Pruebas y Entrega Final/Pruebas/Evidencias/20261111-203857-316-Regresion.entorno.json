@@ -1,0 +1,13 @@
+{
+  "inicio": "2026-11-11T20:38:57.4636126-05:00",
+  "fin": "2026-11-11T20:39:02.6668542-05:00",
+  "suite": "Regresion",
+  "revision_base": "5c517a6cd477c84343c7f519634985f765acd280",
+  "rama": "tests-jfranm",
+  "cambios_sin_commit": "?? \"../../FMX-H3_ Pruebas y Entrega Final/Pruebas/Evidencias/20261111-203801-021-Integracion.entorno.json\"\r\n?? \"../../FMX-H3_ Pruebas y Entrega Final/Pruebas/Evidencias/20261111-203801-021-Integracion.junit.xml\"\r\n?? \"../../FMX-H3_ Pruebas y Entrega Final/Pruebas/Evidencias/20261111-203801-021-Integracion.log\"\r\n?? \"../../FMX-H3_ Pruebas y Entrega Final/Pruebas/FMX_Verificacion_Manual.md\"\r\n?? \"../../FMX-H3_ Pruebas y Entrega Final/Pruebas/tests/CierreIntegracionTest.php\"",
+  "php": "PHP 8.5.12 (cli) (built: Oct 20 2026 04:19:35) (ZTS Visual C++ 2022 x64)\r\nCopyright (c) The PHP Group\r\nBuilt by The PHP Group\r\nZend Engine v4.5.12, Copyright (c) Zend Technologies\r\n    with Zend OPcache v8.5.12, Copyright (c), by Zend Technologies",
+  "configuracion": "C:\\Users\\User\\Desktop\\fmx\\NexoSoft-Consulting\\NexoSoft_Consulting\\Desarrollo\\FMX\\FMX-H2_ Diseño y Desarrollo Core\\App-ferremax\\phpunit.xml",
+  "base_de_pruebas": "SQLite :memory:",
+  "codigo_salida": 0,
+  "nota": "La revisión identifica la base. Los cambios sin commit también forman parte de lo probado. Las fechas son las del equipo ejecutor."
+}
