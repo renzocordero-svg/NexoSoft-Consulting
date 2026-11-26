@@ -43,7 +43,7 @@ Las cuentas y cinco productos iniciales se crean de forma idempotente; los seede
 
 ## Funcionalidades
 
-- CU1: usuario y contraseña, recordar sesión, bloqueo por tres fallos durante cinco minutos, sesión de 30 minutos de inactividad y acceso por rol.
+- CU1: usuario y contraseña (sin «recordar sesión»), mensaje propio para cuentas inactivas que no consume intentos, bloqueo por tres fallos durante cinco minutos, sesión de 30 minutos de inactividad que termina al cerrar el navegador y acceso por rol. En producción con HTTPS, `SESSION_SECURE_COOKIE=true`.
 - CU2: cierre por POST, invalidación de sesión y renovación del token CSRF.
 - CU3: catálogo, búsqueda, alta, edición, desactivación, mínimo de stock, impresión de existencias y entradas/salidas auditadas. El saldo no se edita directamente.
 - CU4: carrito recuperable tras un error, validación en el servidor, importes en centavos, IGV 18 %, transacción atómica, bloqueo de existencias y secuencia de factura protegida.

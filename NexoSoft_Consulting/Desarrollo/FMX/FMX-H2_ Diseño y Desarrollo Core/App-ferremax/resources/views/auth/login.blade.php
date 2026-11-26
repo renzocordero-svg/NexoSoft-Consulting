@@ -66,11 +66,6 @@
                     @enderror
                 </div>
 
-                <div class="mb-4 form-check">
-                    <input type="checkbox" class="form-check-input" id="remember" name="remember">
-                    <label class="form-check-label text-muted" for="remember">Mantener sesión iniciada</label>
-                </div>
-
                 <button type="submit" class="btn btn-warning btn-lg w-100 fw-semibold">
                     <i class="bi bi-box-arrow-in-right me-1"></i>Ingresar
                 </button>

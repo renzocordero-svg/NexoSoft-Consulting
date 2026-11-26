@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\Str;
@@ -30,13 +32,23 @@ class LoginController extends Controller
 
         $this->checkRateLimit($request);
 
+        // SC-17 (CU1 3.2.3): el aviso de cuenta inactiva solo sale con la contraseña correcta,
+        // así no revela qué usuarios existen, y no suma un intento fallido.
+        $usuario = User::where('nombre_usuario', $request->nombre_usuario)->first();
+        if ($usuario && ! $usuario->activo && Hash::check($request->password, $usuario->password)) {
+            throw ValidationException::withMessages([
+                'nombre_usuario' => 'Tu cuenta está inactiva. Comunícate con el administrador.',
+            ]);
+        }
+
         $credentials = [
             'nombre_usuario' => $request->nombre_usuario,
             'password' => $request->password,
             'activo' => true,
         ];
 
-        if (! Auth::attempt($credentials, $request->boolean('remember'))) {
+        // SC-17: sin "recordarme"; la sesión vence por inactividad (config/session.php).
+        if (! Auth::attempt($credentials)) {
             RateLimiter::hit($this->throttleKey($request), 300);
 
             $remaining = 3 - RateLimiter::attempts($this->throttleKey($request));
