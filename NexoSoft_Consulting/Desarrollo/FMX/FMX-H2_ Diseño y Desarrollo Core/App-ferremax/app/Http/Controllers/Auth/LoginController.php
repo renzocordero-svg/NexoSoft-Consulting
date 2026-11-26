@@ -36,7 +36,8 @@ class LoginController extends Controller
             'activo' => true,
         ];
 
-        if (! Auth::attempt($credentials, $request->boolean('remember'))) {
+        // SC-17: sin "recordarme"; la sesión vence por inactividad (config/session.php).
+        if (! Auth::attempt($credentials)) {
             RateLimiter::hit($this->throttleKey($request), 300);
 
             $remaining = 3 - RateLimiter::attempts($this->throttleKey($request));
